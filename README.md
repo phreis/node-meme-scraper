@@ -1,1 +1,7 @@
-# Note Application (CLI) to scrape images from a predifined ressource and save them
+# Note Application (CLI) to scrape images from a predefined resource and save them locally
+
+```
+node index.js
+```
+
+![](./screenshot.png)

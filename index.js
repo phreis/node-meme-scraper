@@ -34,6 +34,6 @@ const urls = images.map((image) => /"(.*?)"/g.exec(image.rawAttrs)[1]);
 urls.forEach(async (url, index) => {
   await fetch(url).then((res) => {
     const filename = `${String(index + 1).padStart(2, '0')}.jpg`;
-    return res.body.pipe(fs.createWriteStream(`./memes/${filename}`));
+    return res.body.pipe(fs.createWriteStream(`${folderName}/${filename}`));
   });
 });
